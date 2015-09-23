@@ -5,7 +5,7 @@ var countries = require('./lib/country');
 
 function isCountry(c, name) {
 	for(var key in c){
-		if(c[key] === name){
+		if( c[key] === name.toUpperCase() ){
 			return true;
 		}
 	}
@@ -29,6 +29,7 @@ var Country = module.exports = function(name){
 		}
 	}
 };
+
 
 Country.prototype.toName = function() {
 	return this.name;
