@@ -1,0 +1,34 @@
+{
+  "name": "country-code",
+  "version": "0.0.1",
+  "description": "country: name, short name, iso code and etc. ",
+  "author": "Hsiaoming Yang <me@lepture.com>",
+  "repository": {
+    "type": "git",
+    "url": "git repository"
+  },
+  "keywords": [
+    "country",
+    "iso",
+    "iso3",
+    "alpha",
+    "alpha3",
+    "short name",
+    "region code"
+  ],
+   "scripts": {
+    "test": "mocha"
+  },
+  "main": "./src",
+  "browser": {
+    "todo": "./vendors/todo/js/app.js"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1",
+    "config": "~0.4.35"
+  },
+  "dependencies": {
+  },
+  "license": "UNLICENSED"
+}
