@@ -5,7 +5,7 @@ var countries = require('./lib/country');
 
 function isCountry(c, name) {
 	for(var key in c){
-		if( c[key] === name.toUpperCase() ){
+		if( c[key].toUpperCase() === name.toUpperCase() ){
 			return true;
 		}
 	}
@@ -26,6 +26,7 @@ var Country = module.exports = function(name){
 			this.iso3166 = c['iso_3166-2'];
 			this.regionCode = c['region-code'];
 			this.subRegionCode = c['sub-region-code'];
+            this.phoneCode = c['phone-code'];
 		}
 	}
 };
@@ -53,4 +54,8 @@ Country.prototype.toAlpha3Code = function() {
 
 Country.prototype.toRegionCode = function() {
 	return [this.regionCode, this.subRegionCode];
+};
+
+Country.prototype.toPhoneCode = function() {
+    return this.phoneCode;
 };
