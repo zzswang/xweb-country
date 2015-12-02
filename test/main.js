@@ -29,5 +29,11 @@ describe('Country', function() {
         	var c = new Country('CYM');
             assert.equal(c.toAlpha3Code(), 'CYM');
         });
+        
+        it('should construct from Phone code', function() {
+        	var c = new Country('86');
+            assert.equal(c.toPhoneCode(), '86');
+            assert.equal(c.toAlpha3Code(), 'CHN');
+        });
     });
 });
