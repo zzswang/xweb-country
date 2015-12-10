@@ -35,5 +35,9 @@ describe('Country', function() {
             assert.equal(c.toPhoneCode(), '86');
             assert.equal(c.toAlpha3Code(), 'CHN');
         });
+
+        it('should return all country list', function() {
+            assert.equal(Country.list().length, 249);
+        });
     });
 });

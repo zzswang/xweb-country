@@ -31,6 +31,10 @@ var Country = module.exports = function(name){
 	}
 };
 
+Country.list = function() {
+	return countries;
+};
+
 
 Country.prototype.toName = function() {
 	return this.name;

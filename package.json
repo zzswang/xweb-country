@@ -1,6 +1,6 @@
 {
   "name": "xweb-country",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "country: name, short name, iso code and etc. ",
   "author": "Hsiaoming Yang <me@lepture.com>",
   "repository": {
